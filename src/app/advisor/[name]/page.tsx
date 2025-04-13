@@ -1,15 +1,6 @@
 import Textarea from "@/components/Textarea";
 import { use } from 'react';
 
-interface AdvisorPageProps {
-	params: {
-		name: string;
-	}
-	searchParams: {
-		[key: string]: string | string[] | undefined;
-	}
-}
-
 type Params = Promise<{ name: string }>
 
 export default function AdvisorPage(props: { params: Params }) {
