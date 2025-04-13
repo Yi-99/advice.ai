@@ -29,18 +29,7 @@ export default function ClientForm({
   }, [state.success]);
 
   return (
-    <form className="flex flex-col gap-4 w-1/2 justify-center items-stretch" action={formAction}>
-      {/* {state.error && (
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-          {state.error}
-        </div>
-      )}
-      {state.success && (
-        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded">
-          Advisor created successfully!
-        </div>
-      )} */}
-      
+    <form className="flex flex-col gap-4 w-1/2 justify-center items-stretch" action={formAction}>     
       <label htmlFor="name" className="text-xl">Name: </label>
       <input
         className="border-2 border-gray-800 rounded-md p-2 !focus:ring-gray-300 focus:ring-2"
