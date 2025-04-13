@@ -32,7 +32,7 @@ export default function ClientForm({
     <form className="flex flex-col gap-4 w-1/2 justify-center items-stretch" action={formAction}>     
       <label htmlFor="name" className="text-xl">Name: </label>
       <input
-        className="border-2 border-gray-800 rounded-md p-2 !focus:ring-gray-300 focus:ring-2"
+        className="border-2 border-gray-300 focus:outline-none dark:border-gray-800 rounded-md p-2 focus:ring-gray-800 dark:focus:ring-gray-300 focus:ring-2"
         type="text"
         placeholder="Socrates"
         name="name"
@@ -55,7 +55,7 @@ function SubmitButton() {
   
   return (
     <button
-      className="w-1/2 self-center bg-white text-black font-bold rounded-md p-2 cursor-pointer transition-colors hover:bg-black hover:text-white hover:border-white hover:border disabled:opacity-50"
+      className="w-1/2 self-center bg-white text-black border-2 border-gray-500 dark:border-none font-bold rounded-md p-2 cursor-pointer transition-colors hover:bg-black hover:text-white hover:border-white hover:border disabled:opacity-50"
       type="submit"
       disabled={pending}
     >
