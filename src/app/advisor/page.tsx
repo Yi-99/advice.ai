@@ -6,10 +6,6 @@ export const dynamic = "force-dynamic";
 export default async function Home() {
 	const advisors = await prisma.advisor.findMany();
 
-	advisors.forEach((a) => {
-		console.log(a.data);
-	})
-
 	return (
 		<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
 			<h1 className="text-3xl font-bold">

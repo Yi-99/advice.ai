@@ -4,16 +4,19 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 export default function Textarea({ 
   name, 
-  id, 
+  id,
+	value,
+	setValue,
   shouldReset = false,
 	isChat = false,
 }: { 
   name: string; 
   id: string; 
+	value: string;
+	setValue: React.Dispatch<React.SetStateAction<string>>;
   shouldReset?: boolean,
 	isChat?: boolean, 
 }) {
-  const [value, setValue] = useState('');
   const [charCount, setCharCount] = useState(0);
   
   // Reset when the shouldReset prop changes to true

@@ -44,4 +44,5 @@ next-env.d.ts
 prisma/dev.db
 prisma/migrations
 prisma/seed.ts
-prisma/generated
+src/generated/**
+src/generated/prisma/*

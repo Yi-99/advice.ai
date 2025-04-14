@@ -128,37 +128,13 @@ exports.Prisma.AdvisorScalarFieldEnum = {
   createdBy: 'createdBy'
 };
 
-exports.Prisma.UserScalarFieldEnum = {
-  id: 'id',
-  name: 'name',
-  email: 'email',
-  password: 'password',
-  createdAt: 'createdAt',
-  updatedAt: 'updatedAt'
-};
-
-exports.Prisma.ChatScalarFieldEnum = {
-  id: 'id',
-  userId: 'userId',
-  advisorId: 'advisorId',
-  createdAt: 'createdAt',
-  updatedAt: 'updatedAt'
-};
-
 exports.Prisma.PromptScalarFieldEnum = {
   id: 'id',
-  chatId: 'chatId',
+  name: 'name',
   content: 'content',
   createdAt: 'createdAt',
-  updatedAt: 'updatedAt'
-};
-
-exports.Prisma.ResponseScalarFieldEnum = {
-  id: 'id',
-  chatId: 'chatId',
-  content: 'content',
-  createdAt: 'createdAt',
-  updatedAt: 'updatedAt'
+  updatedAt: 'updatedAt',
+  history: 'history'
 };
 
 exports.Prisma.SortOrder = {
@@ -179,10 +155,7 @@ exports.Prisma.NullsOrder = {
 
 exports.Prisma.ModelName = {
   Advisor: 'Advisor',
-  User: 'User',
-  Chat: 'Chat',
-  Prompt: 'Prompt',
-  Response: 'Response'
+  Prompt: 'Prompt'
 };
 
 /**
